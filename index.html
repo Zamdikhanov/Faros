@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="information_logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Справочник</title>
+</head>
+
+<body>
+    <div>
+
+        <header class="header wrap--center">
+            <div class="header__logo">
+                <img class="header__logo" src="images/faros_logo.svg" alt="FAROS">
+            </div>
+            <div class="header__title">
+                <img src="/images/rd_logo.svg" alt="R&D">
+                <h2>(Техническая служба)</h2>
+            </div>
+            <div class="header__wrap-selector">
+                <form>
+                    <input id="wrap-selector-1" name="wrap-selector" type="radio" value="center" checked>
+                    <label for="wrap-selector-1">По центру</label>
+                    <br>
+                    <input id="wrap-selector-2" name="wrap-selector" type="radio" value="full">
+                    <label for="wrap-selector-2">Во весь экран</label>
+                </form>
+            </div>
+        </header>
+
+        <nav class="nav wrap--center">
+            <div class="nav-inner">
+                <ol class="nav__list">
+                    <li class="nav__list-item">
+                        <a href="#">Светильники</a></li>
+                    <li class="nav__list-item">
+                        <a href="#">Аксессуары</a></li>
+                    <li class="nav__list-item">
+                        <a href="#">Применимость</a></li>
+                    <li class="nav__list-item">
+                        <a href="#">Светодиодные модули</a></li>
+                    <li class="nav__list-item">
+                        <a href="#">Источники питания</a></li>
+                </ol>
+            </div>
+        </nav>
+
+        <main class="main wrap--center">
+
+            <aside class="filter">
+                <div class="filter__btn-group">
+                    <div class="filter__title">
+                        <h3>Серия светильников</h3>
+                    </div>
+                    <button class="filter__btn active" data-filter='all'> Показать все</button>
+                    <br>
+                    <button class="filter__btn" data-filter='FD'>FD</button>
+                    <button class="filter__btn" data-filter='FG'>FG</button>
+                    <button class="filter__btn" data-filter='FI'>FI</button>
+                    <button class="filter__btn" data-filter='FL'>FL</button>
+                    <button class="filter__btn" data-filter='FM'>FM</button>
+                    <button class="filter__btn" data-filter='FP'>FP и FW</button>
+                    <button class="filter__btn" data-filter='FT'>FT</button>
+                    <button class="filter__btn" data-filter='FZ'>FZ</button>
+                </div>
+                <div class="filter__btn-group">
+                    <div class="filter__title">
+                        <h3>Степень защиты светильника</h3>
+                    </div>
+                    <button class="filter__btn active" data-filter='all'> Показать все</button>
+                    <br>
+                    <button class="filter__btn" data-filter='IP20'>IP20</button>
+                    <button class="filter__btn" data-filter='IP40'>IP40</button>
+                    <button class="filter__btn" data-filter='IP54'>IP54</button>
+                    <button class="filter__btn" data-filter='IP65'>IP65</button>
+                    <button class="filter__btn" data-filter='IP67'>IP67</button>
+                </div>
+            </aside>
+
+            <div class="main-inner">
+
+                <div class="luminaire-card" data-properties="FG50 FG IP65 УХЛ3.1 Замдиханов">
+                    <div class="luminaire-card__inner">
+                        <div class="luminaire-card__image-block slider-hover">
+                            <img class="slider-hover__img" src="pages/fg-50/fg-50-01.png" alt="FG 50 ">
+                            <img class="slider-hover__img" src="pages/fg-50/fg-50-02.png" alt="FG 50 ">
+                            <img class="slider-hover__img" src="pages/fg-50/fg-50-03.png" alt="FG 50 ">
+                            <img class="slider-hover__img slider-hover__img--active" src="pages/fg-50/fg-50-04.jpg" alt="FG 50 ">
+                        </div>
+                        <div class="luminaire-card__info">
+                            <div class="luminaire-card__title">
+                                <h3>FG 50</h3>
+                                <h4>(IP65 УХЛ3.1)</h4>
+                            </div>
+                            <div class="luminaire-card__text">Светильник промышленный в алюминиевом корпусе с высокой степенью защиты IP65. Сфера применения: освещение складских и производственных помещений. Способ установки: подвесной (на тросы или шпильки), накладной на несущую поверхность, на несущую поверхность при помощи поворотных кронштейнов (приобретаются отдельно). Материал корпуса: анодированный алюминий. Материал рассеивателя: поликарбонат. Материал оптики: акрил (для исполнений PIXX CRYSTAL). Тип рассеивателя: опал (OPAL - для нелинзованных исполнений), прозрачный (CRYSTAL). Цвет: серый. Опции (исполнения): БАП (EM), драйвер с поддержкой управления по DALI, ШИМ-регулирования (PWM - для мощности 75W), различные углы раскрытия светового потока (PI), расположение драйвера на внешней стороне корпуса (K-V - для исполнений мощностью 55W, 70W, 100W).
+                            </div>
+                            <div class="luminaire-card__button-details">
+                                <button class="b-details" type="button"><span></span></button>
+                            </div>
+                        </div>
+                        <div class="luminaire-card__specifications details--hide">
+                            <h3>Дополнительная информация:</h3>
+                            <div class="luminaire-card__specifications-chapter">
+                                <p>Ответственный конструктор: Замдиханов</p>
+                                <p>Обозначение документации: KOP017, KOP093 (Ex)</p>
+                                <p>Старое наименование: FG 50 (не менялось)</p>
+                            </div>
+                            <h3>Основные характеристики:</h3>
+                            <table>
+                                <tr>
+                                    <th>Светильник</th>
+                                    <th>Световой поток, Лм</th>
+                                    <th>Эффективность, Лм/Вт</th>
+                                    <th>Размеры, мм</th>
+                                    <th>Примечание</th>
+                                </tr>
+                                <tr>
+                                    <td>FG 50 20W</td>
+                                    <td>2150</td>
+                                    <td>108</td>
+                                    <td>345х55х80</td>
+                                    <td>1 св. модуль</td>
+                                </tr>
+                                <tr>
+                                    <td>FG 50 30W</td>
+                                    <td>3640</td>
+                                    <td>121</td>
+                                    <td>945х55х80</td>
+                                    <td>3 св. модуля</td>
+                                </tr>
+                                <tr>
+                                    <td>FG 50 40W</td>
+                                    <td>4690</td>
+                                    <td>117</td>
+                                    <td>945х55х80</td>
+                                    <td>3 св. модуля</td>
+                                </tr>
+                                <tr>
+                                    <td>FG 50 45W</td>
+                                    <td>5320</td>
+                                    <td>118</td>
+                                    <td>1245х55х80</td>
+                                    <td>3-4 св. модуля</td>
+                                </tr>
+                                <tr>
+                                    <td>FG 50 55W</td>
+                                    <td>6140</td>
+                                    <td>112</td>
+                                    <td>1245х55х80</td>
+                                    <td>4 св. модуля</td>
+                                </tr>
+                                <tr>
+                                    <td>FG 50 75W</td>
+                                    <td>9290</td>
+                                    <td>124</td>
+                                    <td>1545х55х80</td>
+                                    <td>4 св. модуля</td>
+                                </tr>
+                                <tr>
+                                    <td>FG 50 100W</td>
+                                    <td>12090</td>
+                                    <td>121</td>
+                                    <td>1545х55х80</td>
+                                    <td>4 св. модуля</td>
+                                </tr>
+                            </table>
+                            <h3 class="luminaire-card__accessory-title">Дополнительные аксессуары:</h3>
+                            <ul class="luminaire-card__accessory-list ">
+                                <li class="luminaire-card__accessory-item ">
+                                    AKC002 - <strong>FF 101 L1,5 LIFT</strong> - Тросовый подвес M4 (1,5м)
+                                </li>
+                                <li class="luminaire-card__accessory-item ">
+                                    AKC004 - <strong>FF 90</strong> - Скоба (переход на шпильку М8)
+                                </li>
+                                <li class="luminaire-card__accessory-item ">
+                                    AKC010 - <strong>FF 50 BRACKET</strong> - Кронштейн поворотный для FG 50, FG 55
+                                </li>
+                                <li class="luminaire-card__accessory-item ">
+                                    AKC063 - <strong>FF 50 GRID 30-40 PACK</strong> - Решетка защитная для FG 50 30W / 40W, FG 55 30W / 40W
+                                </li>
+                                <li class="luminaire-card__accessory-item ">
+                                    AKC064 - <strong>FF 50 GRID 45-55 PACK</strong> - Решетка защитная для FG 50 45W / 55W, FG 55 45W / 55W
+                                </li>
+                                <li class="luminaire-card__accessory-item ">
+                                    AKC065 - <strong>FF 50 GRID 75-100 PACK</strong> - Решетка защитная для FG 50 75W / 100W, FG 55 75W / 100W
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="luminaire-card" data-properties="FG120 FG IP65 УХЛ2 Замдиханов">
+                    <div class="luminaire-card__inner">
+                        <div class="luminaire-card__image-block slider-hover">
+                            <img class="slider-hover__img" src="pages/fg-120/fg-120-100-01.jpg" alt="FG 120 ">
+                            <img class="slider-hover__img" src="pages/fg-120/fg-120-100-02.jpg" alt="FG 120 ">
+                            <img class="slider-hover__img" src="pages/fg-120/fg-120-150-01.jpg" alt="FG 120 ">
+                            <img class="slider-hover__img" src="pages/fg-120/fg-120-150-02.jpg" alt="FG 120 ">
+                            <img class="slider-hover__img slider-hover__img--active" src="pages/fg-120/fg-120-220-01.jpg" alt="FG 120 ">
+                            <img class="slider-hover__img" src="pages/fg-120/fg-120-220-02.jpg" alt="FG 120 ">
+                        </div>
+                        <div class="luminaire-card__info">
+                            <div class="luminaire-card__title">
+                                <h3>FG 120</h3>
+                                <h4>(IP65 УХЛ2)</h4>
+                            </div>
+                            <div class="luminaire-card__text">Светильник промышленный линзованный. Сфера применения: освещение производственных помещений, складских и спортивных объектов и территорий. Способ установки: подвесной (через рым-болт), накладной на несущую поверхность при помощи
+                                поворотного кронштейна (приобретается отдельно). Материал корпуса: сталь, алюминий (радиатор). Материал оптики: акрил. Цвет: RAL 9005 (черный). Опции (исполнения): различные углы раскрытия светового потока (PI), любой цвет
+                                по RAL.
+                            </div>
+                            <div class="luminaire-card__button-details">
+                                <button class="b-details" type="button"><span></span></button>
+                            </div>
+                        </div>
+                        <div class="luminaire-card__specifications details--hide">
+                            <h3>Дополнительная информация:</h3>
+                            <div class="luminaire-card__specifications-chapter">
+                                <p>Ответственный конструктор: Замдиханов</p>
+                                <p>Обозначение документации: KOP082</p>
+                                <p>Старое наименование: FG 120 (не менялось)</p>
+                            </div>
+                            <h3>Основные характеристики:</h3>
+                            <table>
+                                <tr>
+                                    <th>Светильник</th>
+                                    <th>Световой поток, Лм</th>
+                                    <th>Эффективность, Лм/Вт</th>
+                                    <th>Размеры, мм</th>
+                                    <th>Примечание</th>
+                                </tr>
+                                <tr>
+                                    <td>FG 120 100W</td>
+                                    <td>14430</td>
+                                    <td>144</td>
+                                    <td>348x120х109</td>
+                                    <td>1 поворотный профиль</td>
+                                </tr>
+                                <tr>
+                                    <td>FG 120 150W</td>
+                                    <td>24550</td>
+                                    <td>164</td>
+                                    <td>348x250х132</td>
+                                    <td>2 поворотных профиля</td>
+                                </tr>
+                                <tr>
+                                    <td>FG 120 220W</td>
+                                    <td>32560</td>
+                                    <td>148</td>
+                                    <td>348x380х141</td>
+                                    <td>3 поворотных профиля</td>
+                                </tr>
+                            </table>
+                            <h3 class="luminaire-card__accessory-title">Дополнительные аксессуары:</h3>
+                            <ul class="luminaire-card__accessory-list ">
+                                <li class="luminaire-card__accessory-item ">
+                                    AKC002 - <strong>FF 101 L1,5 LIFT</strong> - Тросовый подвес M4 (1,5м)
+                                </li>
+                                <li class="luminaire-card__accessory-item ">
+                                    AKC004 - <strong>FF 90</strong> - Скоба (переход на шпильку М8)
+                                </li>
+                                <li class="luminaire-card__accessory-item ">
+                                    AKC010 - <strong>FF 50 BRACKET</strong> - Кронштейн поворотный для FG 50, FG 55
+                                </li>
+                                <li class="luminaire-card__accessory-item ">
+                                    AKC063 - <strong>FF 50 GRID 30-40 PACK</strong> - Решетка защитная для FG 50 30W / 40W, FG 55 30W / 40W
+                                </li>
+                                <li class="luminaire-card__accessory-item ">
+                                    AKC064 - <strong>FF 50 GRID 45-55 PACK</strong> - Решетка защитная для FG 50 45W / 55W, FG 55 45W / 55W
+                                </li>
+                                <li class="luminaire-card__accessory-item ">
+                                    AKC065 - <strong>FF 50 GRID 75-100 PACK</strong> - Решетка защитная для FG 50 75W / 100W, FG 55 75W / 100W
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="luminaire-card" data-properties="FL60 FL IP20 УХЛ3.1 Замдиханов">
+                    <div class="luminaire-card__inner">
+                        <div class="luminaire-card__image-block slider-hover">
+                            <img class="slider-hover__img slider-hover__img--active" src="pages/fl-60/fl-60-01.jpg" alt="FL 60 ">
+                            <img class="slider-hover__img" src="pages/fl-60/fl-60-02.jpg" alt="FL 60 ">
+                            <img class="slider-hover__img" src="pages/fl-60/fl-60-03.jpg" alt="FL 60 ">
+                        </div>
+                        <div class="luminaire-card__info">
+                            <div class="luminaire-card__title">
+                                <h3>FL 60</h3>
+                                <h4>(IP20 УХЛ3.1)</h4>
+                            </div>
+                            <div class="luminaire-card__text">Светильник линейный в алюминиевом корпусе. Сфера применения: общее освещение торговых залов и офисных помещений. Способ установки: подвесной (на тросы или шпильки, возможен монтаж в единую линию с транзитной проводкой). Материал
+                                корпуса: алюминий. Материал рассеивателя: полистирол (для исполнения CRYSTAL - поликарбонат). Тип рассеивателя: микропризма (PRISM), опал (OPAL), прозрачный (CRYSTAL). Цвет: RAL 9006 (бело-алюминиевый). Опции (исполнения):
+                                БАП (EM), драйвер с поддержкой управления по 1-10, любой цвет по RAL.
+                            </div>
+                            <div class="luminaire-card__button-details">
+                                <button class="b-details" type="button"><span></span></button>
+                            </div>
+                        </div>
+                        <div class="luminaire-card__specifications details--hide">
+                            <h3>Дополнительная информация:</h3>
+                            <div class="luminaire-card__specifications-chapter">
+                                <p>Ответственный конструктор: Замдиханов</p>
+                                <p>Обозначение документации: KOP052</p>
+                                <p>Старое наименование: FL 60 1500</p>
+                            </div>
+                            <h3>Основные характеристики:</h3>
+                            <table>
+                                <tr>
+                                    <th>Светильник</th>
+                                    <th>Световой поток, Лм</th>
+                                    <th>Эффективность, Лм/Вт</th>
+                                    <th>Размеры, мм</th>
+                                    <th>Примечание</th>
+                                </tr>
+                                <tr>
+                                    <td>FL 60 34W</td>
+                                    <td>5020</td>
+                                    <td>148</td>
+                                    <td>1500x60x70</td>
+                                    <td>1 поворотный профиль</td>
+                                </tr>
+                                <tr>
+                                    <td>FL 60 45W</td>
+                                    <td>6270</td>
+                                    <td>139</td>
+                                    <td>1500x60x70</td>
+                                    <td>2 поворотных профиля</td>
+                                </tr>
+                                <tr>
+                                    <td>FL 60 65W</td>
+                                    <td>8570</td>
+                                    <td>132</td>
+                                    <td>1500x60x70</td>
+                                    <td>3 поворотных профиля</td>
+                                </tr>
+                                <tr>
+                                    <td>FL 60 72W</td>
+                                    <td>9370</td>
+                                    <td>130</td>
+                                    <td>1500x60x70</td>
+                                    <td>3 поворотных профиля</td>
+                                </tr>
+                            </table>
+                            <h3 class="luminaire-card__complect-title">Стандартная комплектация:</h3>
+                            <ul class="luminaire-card__complect-list ">
+                                <li class="luminaire-card__complect-item ">
+                                    AKC002 - <strong>FF 101 L1,5 LIFT</strong> - Тросовый подвес M4 (1,5м) - 1шт.
+                                </li>
+                                <li class="luminaire-card__complect-item ">
+                                    AKC042 - Крышка торцевая - 2 шт.
+                                </li>
+                                <li class="luminaire-card__complect-item ">
+                                    КОР052.03.00 - Планки соединительные с крепежными элементами - 2 шт.
+                                </li>
+                            </ul>
+                            <h3 class="luminaire-card__accessory-title">Дополнительные аксессуары:</h3>
+                            <ul class="luminaire-card__accessory-list ">
+                                <li class="luminaire-card__accessory-item ">
+                                    AKC002 - <strong>FF 101 L1,5 LIFT</strong> - Тросовый подвес M4 (1,5м)
+                                </li>
+                                <li class="luminaire-card__accessory-item ">
+                                    AKC004 - <strong>FF 90</strong> - Скоба (переход на шпильку М8)
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="luminaire-card" data-properties="FL60DESIGN FL IP20 УХЛ3.1">
+                    <div class="luminaire-card__inner">
+                        <div class="luminaire-card__image-block slider-hover">
+                            <img class="slider-hover__img slider-hover__img--active " src="pages/fl-60-design/fl-60-01.png " alt="FL 60 ">
+                            <img class="slider-hover__img " src="pages/fl-60-design/fl-60-02.png" alt="FL 60 ">
+                            <img class="slider-hover__img " src="pages/fl-60-design/fl-60-03.jpg" alt="FL 60 ">
+                            <img class="slider-hover__img " src="pages/fl-60-design/fl-60-04.jpg" alt="FL 60 ">
+                            <img class="slider-hover__img " src="pages/fl-60-design/fl-60-05.jpg" alt="FL 60 ">
+                        </div>
+                        <div class="luminaire-card__info">
+                            <h3 class="luminaire-card__title">
+                                FL 60 DESIGN
+                            </h3>
+                            <h4>(IP20 УХЛ3.1)</h4>
+                            <div class="luminaire-card__text ">Светильник линейный в алюминиевом корпусе. Сфера применения: общее освещение торговых залов и офисных помещений. Способ установки: подвесной (на тросы или шпильки, возможен монтаж в единую линию с транзитной проводкой). Материал
+                                корпуса: алюминий. Материал рассеивателя: полистирол (для исполнения CRYSTAL - поликарбонат). Тип рассеивателя: микропризма (PRISM), опал (OPAL), прозрачный (CRYSTAL). Цвет: RAL 9006 (бело-алюминиевый). Опции (исполнения):
+                                БАП (EM), драйвер с поддержкой управления по 1-10, любой цвет по RAL.
+                            </div>
+                            <div class="luminaire-card__button-details">
+                                <button class="b-details" type="button"><span></span></button>
+                            </div>
+                        </div>
+                        <div class="luminaire-card__specifications details--hide">
+                            <table>
+                                <tr>
+                                    <th>Светильник</th>
+                                    <th>Световой поток, Лм</th>
+                                    <th>Эффективность, Лм/Вт</th>
+                                    <th>Размеры, мм</th>
+                                    <th>Примечание</th>
+                                </tr>
+                                <tr>
+                                    <td>FG 120 100W</td>
+                                    <td>14430</td>
+                                    <td>144</td>
+                                    <td>348x120х109</td>
+                                    <td>1 поворотный профиль</td>
+                                </tr>
+                                <tr>
+                                    <td>FG 120 150W</td>
+                                    <td>24550</td>
+                                    <td>164</td>
+                                    <td>348x250х132</td>
+                                    <td>2 поворотных профиля</td>
+                                </tr>
+                                <tr>
+                                    <td>FG 120 220W</td>
+                                    <td>32560</td>
+                                    <td>148</td>
+                                    <td>348x380х141</td>
+                                    <td>3 поворотных профиля</td>
+                                </tr>
+                            </table>
+                            <h3 class="luminaire-card__accessory-title ">Дополнительные аксессуары:</h3>
+                            <ul class="luminaire-card__accessory-list ">
+                                <li class="luminaire-card__accessory-item ">
+                                    AKC002 - <strong>FF 101 L1,5 LIFT</strong> - Тросовый подвес M4 (1,5м)
+                                </li>
+                                <li class="luminaire-card__accessory-item ">
+                                    AKC004 - <strong>FF 90</strong> - Скоба (переход на шпильку М8)
+                                </li>
+                                <li class="luminaire-card__accessory-item ">
+                                    AKC010 - <strong>FF 50 BRACKET</strong> - Кронштейн поворотный для FG 50, FG 55
+                                </li>
+                                <li class="luminaire-card__accessory-item ">
+                                    AKC063 - <strong>FF 50 GRID 30-40 PACK</strong> - Решетка защитная для FG 50 30W/40W, FG 55 30W/40W
+                                </li>
+                                <li class="luminaire-card__accessory-item ">
+                                    AKC064 - <strong>FF 50 GRID 45-55 PACK</strong> - Решетка защитная для FG 50 45W/55W, FG 55 45W/55W
+                                </li>
+                                <li class="luminaire-card__accessory-item ">
+                                    AKC065 - <strong>FF 50 GRID 75-100 PACK</strong> - Решетка защитная для FG 50 75W/100W, FG 55 75W/100W
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="luminaire-card " data-properties="FT IP40 УХЛ3.1 ">
+                    <div class="luminaire-card__image-block slider-hover ">
+                        <img class="slider-hover__img slider-hover__img--active " src="pages/ft-185/ft-185-01.jpg " alt="FT 185 ">
+                        <img class="slider-hover__img " src="pages/ft-185/ft-185-02.jpg " alt="FT 185 ">
+                        <img class="slider-hover__img " src="pages/ft-185/ft-185-03.jpg " alt="FT 185 ">
+                        <img class="slider-hover__img " src="pages/ft-185/ft-185-04.jpg " alt="FT 185 ">
+                    </div>
+                    <div class="luminaire-card__info">
+                        <h3 class="luminaire-card__title ">
+                            FT 185
+                        </h3>
+                        <h4>(IP40 УХЛ3.1)</h4>
+                        <div class="luminaire-card__text ">Светильник трековый прямоугольный линзованный общего освещения. Сфера применения: освещение торговых залов, офисных помещений. Способ установки: на шинопровод. Материал корпуса: сталь. Материал оптики: акрил. Цвет: RAL 7038 (агатовый
+                            серый). Различные углы раскрытия светового потока (PI). Опции: БАП (EM), любой цвет по RAL.
+                        </div>
+                        <div class="luminaire-card__description ">
+                            <ul class="luminaire-card__description-list ">
+                                <li class="luminaire-card__description-item ">
+                                    FT 185 47W
+                                </li>
+                                <li class="luminaire-card__description-item ">
+                                    FT 185 62W
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="luminaire-card__accessory ">
+                        <h3 class="luminaire-card__accessory-title ">Дополнительные аксессуары:</h3>
+                        <ul class="luminaire-card__accessory-list ">
+                            <li class="luminaire-card__accessory-item ">
+                                AKC002
+                            </li>
+                            <li class="luminaire-card__accessory-item ">
+                                AKC004
+                            </li>
+                            <li class="luminaire-card__accessory-item ">
+                                AKC005
+                            </li>
+                            <li class="luminaire-card__accessory-item ">
+                                AKC006
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <footer class="footer wrap--center">
+            <div class="footer-inner ">
+                <span class="footer__text ">2021 Замдиханов</span>
+            </div>
+        </footer>
+
+    </div>
+    <script src="js/app.js "></script>
+</body>
+
+</html>
