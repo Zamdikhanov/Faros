@@ -28,9 +28,7 @@ body {
     display: flex;
     height: 120px;
     padding: 5px 20px 5px 20px;
-    <<<<<<< HEAD
-    /* background: #fefefe; */
-    =======>>>>>>>master color: #4D4D4F;
+    color: #4D4D4F;
     justify-content: space-between;
     align-items: center;
 }
@@ -44,34 +42,24 @@ body {
 .header__title {
     margin: 0 20px;
     display: flex;
-    <<<<<<< HEAD
-    /* flex-direction: row; */
-    =======>>>>>>>master
 }
 
 .header__title img {
     height: 55px;
     width: 150px;
     object-fit: contain;
-    <<<<<<< HEAD
-    /* display: block; */
 }
 
-.header__title h2 {
-    /* height: 100%; */
-    =======
-}
+
+/* .header__title h2 {
+    height: 100%;
+} */
 
 .header__title h2 {
-    >>>>>>>master font-size: 55px;
+    font-size: 55px;
     color: #000;
     margin: auto;
     font-weight: 700;
-    <<<<<<< HEAD
-    /* text-align: center; */
-    /* align-items: center; */
-    /* display: block; */
-    =======>>>>>>>master
 }
 
 .header__wrap-selector {
@@ -124,10 +112,10 @@ body {
     bottom: 3px;
 }
 
-<<<<<<< HEAD=======
+
 /* --- nav menu --- */
 
->>>>>>>master .nav {
+.nav {
     height: 54px;
 }
 
