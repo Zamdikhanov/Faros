@@ -31,7 +31,7 @@ function menuSticky() {
     // console.log("sticky", sticky);
 }
 
-const cards = document.querySelectorAll('.luminaire-card');
+const cards = document.querySelectorAll('.js-card');
 cards.forEach(card => card.addEventListener('mouseenter', (() => sliderHover(card))));
 
 function sliderHover(card) {
