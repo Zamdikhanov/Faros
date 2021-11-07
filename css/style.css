@@ -588,7 +588,6 @@ body {
 
 .accessory-card__image-block {
     width: 100%;
-    /* height: calc(width px - 50); */
     height: 350px;
     border: rgba(77, 77, 79, 0.3) solid 1px;
     border-radius: 5px;
@@ -606,18 +605,47 @@ body {
 
 /* --- abbreviation --- */
 
-.abbreviation-uhl {
+.main-abbreviation__inner {
     width: 100%;
+}
+
+.abbreviation-uhl {
+    max-width: 1380px;
     padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-evenly;
 }
 
 .abbreviation-uhl--title {
     font-size: 1.4rem;
-    margin-bottom: 1.4em;
+    margin: 1.4em 0;
+    width: 100%;
+    text-align: center;
 }
 
-.abbreviation-uhl--content p {
-    margin-bottom: 1em;
+.abbreviation-uhl--content-center {
+    margin: 0 auto 3rem;
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+}
+
+.abbreviation-uhl--content-left,
+.abbreviation-uhl--content-right {
+    margin-bottom: 20px;
+    padding: 2em 2em;
+    width: calc(50% - 30px);
+    border-radius: 5px;
+    border: 2px rgba(77, 77, 79, 0.3) solid;
+}
+
+.abbreviation-uhl--content-bottom {
+    padding: 2em 2em;
+    width: calc(50% - 30px);
+    border-radius: 5px;
+    border: 2px rgba(77, 77, 79, 0.3) solid;
 }
 
 .abbreviation-uhl--content ul {
