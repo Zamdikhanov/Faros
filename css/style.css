@@ -296,7 +296,7 @@ body {
     position: relative;
     max-height: 240px;
     transition: all ease-in-out 1s;
-    background-image: url(/images/bg_card.svg);
+    background-image: url(../images/bg_card.svg);
     background-repeat: no-repeat;
     background-size: 920px auto;
     background-position: right top;
@@ -550,7 +550,7 @@ body {
     width: 33.33%;
     overflow: hidden;
     transition: all ease-in-out 0.3s;
-    background-image: url(/images/bg_card.svg);
+    background-image: url(../images/bg_card.svg);
     background-repeat: no-repeat;
     background-size: 400px auto;
     background-position: right bottom;
@@ -599,6 +599,30 @@ body {
     margin-bottom: 30px;
 }
 
+/* --- abbreviation --- */
+
+.abbreviation-uhl {
+    width: 100%;
+    padding: 10px;
+}
+
+.abbreviation-uhl--title {
+    font-size: 1.4rem;
+    margin-bottom: 1.4em;
+}
+
+.abbreviation-uhl--content p{
+    margin-bottom: 1em;
+}
+
+.abbreviation-uhl--content ul {
+    margin-bottom: 2em;
+}
+
+.abbreviation-uhl--content li {
+    margin-bottom: 0.5em;
+    margin-left: 1em;
+}
 
 /* --- footer --- */
 
