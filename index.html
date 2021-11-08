@@ -19,8 +19,10 @@
                 <img class="header__logo" src="images/faros_logo.svg" alt="FAROS">
             </div>
             <div class="header__title">
-                <img src="images/rd_logo.svg" alt="R&D">
-                <h2>(Техническая служба)</h2>
+                <div class="header__title-inner">
+                    <img src="images/rd_logo.svg" alt="R&D">
+                    <h2>(Техническая служба)</h2>
+                </div>
             </div>
             <div class="header__wrap-selector">
                 <form>
@@ -35,6 +37,9 @@
 
         <nav class="nav wrap--center">
             <div class="nav-inner">
+                <div class="nav-burger">
+                    <span></span>
+                </div>
                 <ol class="nav__list">
                     <li class="nav__list-item nav__list-item--active">
                         <a href="index.html"><span>Светильники</span></a></li>
@@ -55,14 +60,9 @@
                     </div>
                     <button class="filter__btn active" data-filter='all'> Показать все</button>
                     <br>
-                    <!-- <button class="filter__btn" data-filter='FD'>FD</button> -->
                     <button class="filter__btn" data-filter='FG'>FG</button>
-                    <!-- <button class="filter__btn" data-filter='FI'>FI</button> -->
                     <button class="filter__btn" data-filter='FL'>FL</button>
-                    <!-- <button class="filter__btn" data-filter='FM'>FM</button> -->
-                    <!-- <button class="filter__btn" data-filter='FP'>FP и FW</button> -->
                     <button class="filter__btn" data-filter='FT'>FT</button>
-                    <!-- <button class="filter__btn" data-filter='FZ'>FZ</button> -->
                 </div>
                 <div class="filter__btn-group">
                     <div class="filter__title">
@@ -72,9 +72,7 @@
                     <br>
                     <button class="filter__btn" data-filter='IP20'>IP20</button>
                     <button class="filter__btn" data-filter='IP40'>IP40</button>
-                    <!-- <button class="filter__btn" data-filter='IP54'>IP54</button> -->
                     <button class="filter__btn" data-filter='IP65'>IP65</button>
-                    <!-- <button class="filter__btn" data-filter='IP67'>IP67</button> -->
                 </div>
             </aside>
 

@@ -18,14 +18,14 @@ function wrapSize() {
 
 window.onscroll = function() { menuSticky() };
 
-var nav = document.querySelector(".nav");
-var sticky = nav.offsetTop;
+let nav = document.getElementsByClassName("nav");
+let sticky = nav[0].offsetTop;
 
 function menuSticky() {
     if (window.pageYOffset >= sticky) {
-        nav.classList.add("nav--sticky")
+        nav[0].classList.add("nav--sticky")
     } else {
-        nav.classList.remove("nav--sticky");
+        nav[0].classList.remove("nav--sticky");
     }
     // console.log("scroll", window.pageYOffset);
     // console.log("sticky", sticky);
