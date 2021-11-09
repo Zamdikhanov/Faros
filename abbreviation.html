@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../information_logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Справочник</title>
+</head>
+
+<body>
+    <div>
+
+        <header class="header wrap--center">
+            <div class="header__logo">
+                <img class="header__logo" src="../images/faros_logo.svg" alt="FAROS">
+            </div>
+            <div class="header__title">
+                <div class="header__title-inner">
+                    <img src="../images/rd_logo.svg" alt="R&D">
+                    <h2>(Техническая служба)</h2>
+                </div>
+            </div>
+            <div class="header__wrap-selector">
+                <form>
+                    <input id="wrap-selector-1" name="wrap-selector" type="radio" value="center" checked>
+                    <label for="wrap-selector-1">По центру</label>
+                    <br>
+                    <input id="wrap-selector-2" name="wrap-selector" type="radio" value="full">
+                    <label for="wrap-selector-2">Во весь экран</label>
+                </form>
+            </div>
+        </header>
+
+        <nav class="nav wrap--center">
+            <div class="nav-inner">
+                <div class="nav-burger">
+                    <span></span>
+                </div>
+                <ol class="nav__list">
+                    <li class="nav__list-item">
+                        <a href="../index.html"><span>Светильники</span></a></li>
+                    <li class="nav__list-item">
+                        <a href="accessory.html"><span>Аксессуары</span></a></li>
+                    <li class="nav__list-item nav__list-item--active">
+                        <a href="abbreviation.html"><span>Сокращения</span></a></li>
+                </ol>
+            </div>
+        </nav>
+
+        <main class="main wrap--center">
+
+
+            <div class="main-abbreviation__inner">
+
+                <div class="abbreviation-uhl">
+                    <div class="abbreviation-uhl--title">
+                        <h2>Исполнения для различных климатических районов. (ГОСТ 15150-69)</h2>
+                    </div>
+                    <div class="abbreviation-uhl--content-center">
+                        <p>
+                            Климатическое исполнение и категорию размещения пишут слитно:
+                            <ul>
+                                <li>- указание на макроклимат обозначают буквами;</li>
+                                <li>- указание на категорию размещения обозначают цифрами.</li>
+                            </ul>
+                            Например: УХЛ3.1
+                        </p>
+                    </div>
+                    <div class="abbreviation-uhl--content-left">
+                        <p>
+                            Расшифровка первой части обозначения (буквы, климатическое исполнение):
+                            <ul>
+                                <li>У – умеренный макроклиматический район (большая часть США, территория Европы, в том числе Беларусь, Украина, часть России);</li>
+                                <li>ХЛ – холодный макроклиматический район (Канада, большая часть территории России;</li>
+                                <li>УХЛ – объединение умеренного и холодного макроклиматических районов (включая территорию Европы и России, США и Канады);</li>
+                                <li>ТВ - влажный тропический климат (большая часть территории Южной Америки, Южной Африки, Индии);</li>
+                                <li>ТС - сухой тропический климат (большая часть территории Северной Африки, Австралии, Азии, включая Турцию, ОАЭ).</li>
+                                <li>О – общий район суши, исключая районы с очень низкими температурами;</li>
+                                <li>М – макроклиматический район с умеренно-холодным морским климатом;</li>
+                                <li>В – все районы земного шара, исключая части земли с очень низкими температурами (например, Антарктида).</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="abbreviation-uhl--content-right">
+                        <p>
+                            Разбор второй части обозначения (цифра, категория размещения):
+                            <ul>
+                                <li>1 – эксплуатация на открытом воздухе с воздействием любых атмосферных факторов (дождь, ливень, снег, пыль при сильном ветре);</li>
+                                <li>2 – эксплуатация под навесом (защита от вертикальных струй воды, допускается обрызгивание, попадание пыли, снега);</li>
+                                <li>3 – эксплуатация в крытых помещениях без регулирования температурных условий с естественной вентиляцией (температура практически не отличается от уличной, нет брызг и струй воды, незначительное количество пыли);</li>
+                                <li>4 – эксплуатация в крытых помещениях с отоплением и с искусственной вентиляцией (регулирование температурных условий, нет низких температур, низкая концентрация пыли);</li>
+                                <li>5 – работа во влажных ограниченных пространствах без отопления и вентиляции, при наличии воды либо конденсата (например, шахты, корабельные трюмы, подвалы).</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="abbreviation-uhl--content-bottom">
+                        <p>
+                            Дополнительные категории:
+                            <ul>
+                                <li>1.1 – кратковременная работа в любых категориях размещения до 4 включительно, предпочтительная эксплуатация в категории размещения 4 для более продолжительной сохранности;</li>
+                                <li>2.1 – работа внутри комплектных устройств категории размещения до 2 включительно, где исключается конденсация влаги;</li>
+                                <li>3.1 – работа в нерегулярно отапливаемых помещениях с естественной вентиляцией;</li>
+                                <li>4.1 – работоспособность в строениях с кондиционированным воздухом;</li>
+                                <li>4.2 – работа в лабораторных, капитальных жилых помещениях;</li>
+                                <li>5.1 – работоспособность внутри комплектных устройств категории размещения 5, где исключается образование конденсата.</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </main>
+
+        <footer class="footer wrap--center">
+            <div class="footer-inner ">
+                <span class="footer__text ">2021 Замдиханов</span>
+            </div>
+        </footer>
+
+    </div>
+    <script src="../js/app.js "></script>
+</body>
+
+</html>
