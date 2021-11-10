@@ -118,3 +118,11 @@ function showDetails(event) {
     card.querySelector('.luminaire-card__specifications').classList.toggle("details--hide");
     setTimeout(() => card.classList.toggle("luminaire-card__inner--full"), 0);
 }
+
+const navBurger = document.querySelector('.nav-burger');
+const navBody = document.querySelector('.nav-body');
+navBurger.addEventListener('click', function(e) {
+    document.body.classList.toggle('body--lock');
+    navBurger.classList.toggle('nav-burger--active');
+    navBody.classList.toggle('nav-body--active');
+})

@@ -14,6 +14,10 @@ body {
     font-family: sans-serif;
 }
 
+body.body--lock {
+    overflow: hidden;
+}
+
 .wrap--center {
     max-width: 1500px;
     background-color: #fafafa;
@@ -205,11 +209,11 @@ body {
 
 .nav {
     height: 54px;
+    z-index: 100;
 }
 
 .nav--sticky {
     position: fixed;
-    z-index: 100;
     top: 0;
     left: 0;
     right: 0;
@@ -227,39 +231,57 @@ body {
 
 .nav-burger {
     position: relative;
-    height: 30px;
-    width: 30px;
+    height: 26px;
+    width: 40px;
     display: none;
-    margin-left: 5px;
+    margin: auto 5px;
+    cursor: pointer;
 }
 
-.nav-burger span {
+.nav-burger span,
+.nav-burger::before,
+.nav-burger::after {
+    display: block;
     position: absolute;
-    height: 4px;
-    width: 100%;
-    background-color: #fff;
-    top: 50%;
-    margin-top: 2px;
-}
-
-.nav-burger span::before,
-.nav-burger span::after {
-    content: '';
-    position: absolute;
-    height: 4px;
+    height: 15%;
     width: 100%;
     background-color: #fff;
     margin: 0 auto;
     left: 0;
     right: 0;
+    transition: all 0.5s ease 0s;
 }
 
-.nav-burger span::before {
-    top: 10px;
+.nav-burger span {
+    top: 50%;
+    transform: scale(1) translate(0px, -50%);
 }
 
-.nav-burger span::after {
-    bottom: 10px;
+.nav-burger::before,
+.nav-burger::after {
+    content: '';
+}
+
+.nav-burger::before {
+    top: 0;
+}
+
+.nav-burger::after {
+    bottom: 0;
+}
+
+.nav-burger.nav-burger--active span {
+    transform: scale(0)
+}
+
+.nav-burger.nav-burger--active::before {
+    top: 50%;
+    transform: rotate(45deg) translate(0px, -50%);
+}
+
+.nav-burger.nav-burger--active::after {
+    bottom: 50%;
+    transform: rotate(-45deg) translate(0px, 50%);
 }
 
 .nav__list {
@@ -270,8 +292,6 @@ body {
 }
 
 .nav__list-item {
-    display: flex;
-    flex-direction: row;
     width: 190px;
     padding: 5px 5px;
     position: relative;
@@ -342,9 +362,62 @@ body {
     }
     .nav-burger {
         display: block;
+        z-index: 100;
+    }
+    .nav-body {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.95);
+        padding: 120px 20px 30px;
+        transition: left 0.3s ease 0s;
+        z-index: 99;
+        overflow: auto;
+    }
+    .nav-body.nav-body--active {
+        left: 0;
+    }
+    .nav--sticky .nav-body {
+        padding: 60px 20px 30px;
+    }
+    .nav-body--active.nav-body::before {
+        content: '';
+        position: fixed;
+        width: 100%;
+        height: 100px;
+        top: 0;
+        left: 0;
+        background: #FF5000;
+        z-index: 99;
+    }
+    .nav--sticky .nav-body::before {
+        height: 40px;
     }
     .nav__list {
-        display: none;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .nav__list-item {
+        width: 80%;
+        margin: 0 10% 2rem;
+        color: #eee;
+        font-size: 2rem;
+        letter-spacing: initial;
+        font-weight: 400;
+    }
+    .nav__list-item:hover {
+        color: #FF5000;
+        letter-spacing: initial;
+        font-weight: 400;
+    }
+    .nav__list-item::after {
+        bottom: 0px;
+        height: 3px;
+    }
+    .nav__list-item--active {
+        color: #fff;
     }
     .nav--sticky+.main {
         padding-top: 40px;
