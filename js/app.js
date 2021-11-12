@@ -123,6 +123,14 @@ const navBurger = document.querySelector('.nav-burger');
 const navBody = document.querySelector('.nav-body');
 navBurger.addEventListener('click', function(e) {
     document.body.classList.toggle('body--lock');
-    navBurger.classList.toggle('nav-burger--active');
-    navBody.classList.toggle('nav-body--active');
+    navBurger.classList.toggle('menu-button--active');
+    navBody.classList.toggle('menu-body--active');
+})
+
+const filter = document.querySelector('.btn-filter-show');
+const filterBody = document.querySelector('.filter');
+filter.addEventListener('click', function(e) {
+    document.body.classList.toggle('body--lock');
+    filter.classList.toggle('menu-button--active');
+    filterBody.classList.toggle('menu-body--active');
 })
