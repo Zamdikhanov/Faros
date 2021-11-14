@@ -19,13 +19,16 @@ function wrapSize() {
 window.onscroll = function() { menuSticky() };
 
 let nav = document.getElementsByClassName("nav");
+let filterMenu = document.querySelector(".filter");
 let sticky = nav[0].offsetTop;
 
 function menuSticky() {
     if (window.pageYOffset >= sticky) {
-        nav[0].classList.add("nav--sticky")
+        nav[0].classList.add("nav--sticky");
+        filterMenu.classList.add("nav--sticky2");
     } else {
         nav[0].classList.remove("nav--sticky");
+        filterMenu.classList.remove("nav--sticky2");
     }
     // console.log("scroll", window.pageYOffset);
     // console.log("sticky", sticky);
