@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 *,
 *:before,
 *:after {
@@ -11,7 +12,7 @@ strong {
 
 body {
     background-color: #f5f5f6;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body.body--lock {
@@ -290,6 +291,7 @@ body.body--lock {
     display: flex;
     color: inherit;
     text-decoration: none;
+    font-size: 20px;
     width: 100%;
     height: 100%;
     margin: auto;
@@ -311,27 +313,36 @@ body.body--lock {
     }
     .nav-inner {
         justify-content: space-between;
+        padding: 0 5px;
     }
-    .nav-burger {
+    .nav_btn {
         display: block;
-        z-index: 4;
-        position: relative;
-        height: 26px;
-        width: 40px;
         margin: auto 5px;
         cursor: pointer;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        font-size: 16px;
+        color: #fff;
+        background: transparent;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        text-align: center;
+    }
+    .nav-burger {
+        z-index: 4;
+        position: relative;
+        padding: 5px 8px 5px 36px;
     }
     .nav-burger span,
     .nav-burger::before,
     .nav-burger::after {
         display: block;
         position: absolute;
-        height: 15%;
-        width: 100%;
+        height: 2px;
+        width: 22px;
         background-color: #fff;
         margin: 0 auto;
-        left: 0;
-        right: 0;
+        left: 8px;
         transition: all 0.5s ease 0s;
     }
     .nav-burger span {
@@ -343,10 +354,10 @@ body.body--lock {
         content: '';
     }
     .nav-burger::before {
-        top: 0;
+        top: 6px;
     }
     .nav-burger::after {
-        bottom: 0;
+        bottom: 6px;
     }
     .nav-burger.menu-button--active span {
         transform: scale(0)
@@ -419,14 +430,7 @@ body.body--lock {
         color: #ff8750;
     }
     .btn-filter-show {
-        display: block;
-        margin: auto 5px;
-        border: 2px solid #fff;
-        border-radius: 10px;
-        padding: 0.3em 1.6em 0.3em 0.5em;
-        color: #fff;
-        font-weight: 700;
-        letter-spacing: 0.2em;
+        padding: 5px 26px 5px 8px;
         z-index: 2;
         position: relative;
     }
@@ -502,7 +506,8 @@ body.body--lock {
     margin-bottom: 15px;
 }
 
-.filter__btn-group:hover {
+.filter__btn-group:hover,
+.filter__btn-group:focus-within {
     box-shadow: 0px 0px 8px 3px rgba(77, 77, 79, 0.3);
     background: #fff;
 }
@@ -514,7 +519,8 @@ body.body--lock {
     font-weight: 700;
 }
 
-.filter__btn-group:hover .filter__title h3 {
+.filter__btn-group:hover .filter__title h3,
+.filter__btn-group:focus-within .filter__title h3 {
     color: #FF5000;
 }
 
@@ -529,7 +535,8 @@ body.body--lock {
     min-width: 50px;
 }
 
-.filter__btn:hover {
+.filter__btn:hover,
+.filter__btn:focus {
     background-color: #ddd;
 }
 
@@ -622,7 +629,8 @@ body.body--lock {
     padding: 20px;
 }
 
-.luminaire-card:hover {
+.luminaire-card:hover,
+.luminaire-card:focus-within {
     box-shadow: 0px 0px 5px 2px rgba(77, 77, 79, 0.3);
     border-radius: 5px;
 }
@@ -736,7 +744,7 @@ body.body--lock {
     padding-left: 1em;
     line-height: 1.5rem;
     position: relative;
-    transition: all 1s ease 2s;
+    transition: all 0.5s ease;
 }
 
 .luminaire-card__inner--full .luminaire-card__specifications h3,
@@ -753,7 +761,7 @@ body.body--lock {
     left: 0;
     bottom: 0;
     background-color: #FF5000;
-    transition: width ease-in-out 1s;
+    transition: width ease-in-out 0.6s;
 }
 
 .luminaire-card__inner--full .luminaire-card__specifications h3::after,
@@ -778,13 +786,11 @@ body.body--lock {
 
 .luminaire-card__button-details {
     position: absolute;
-    bottom: 2px;
-    right: 2px;
-    border: rgba(77, 77, 79, 1) 1px solid;
+    bottom: 0px;
+    right: 0px;
+    border: rgba(255, 81, 0, 0.5) 2px solid;
     border-radius: 3px;
     background: #fafafa;
-    padding: 2px;
-    box-shadow: 0px 0px 2px 2px rgba(77, 77, 79, 0.3);
 }
 
 .b-details {
@@ -794,12 +800,13 @@ body.body--lock {
     height: 25px;
     border: none;
     background-color: inherit;
+    box-shadow: inset 0px 0px 10px rgba(255, 81, 0, 0.2);
 }
 
 .b-details:hover,
 .b-details:hover::before,
 .b-details.active:hover::before {
-    color: #FF5000;
+    color: rgb(255, 81, 0);
     background-color: #fff;
 }
 
@@ -919,7 +926,7 @@ body.body--lock {
         height: 100%;
     }
     .luminaire-card__info {
-        padding: 0 0 25px;
+        padding: 15px 0 25px;
         width: 100%;
     }
 }
@@ -938,7 +945,6 @@ body.body--lock {
 
 .accessory-card {
     border: 2px transparent solid;
-    /* width: 100%; */
     overflow: hidden;
     transition: all ease-in-out 0.3s;
     background-image: url(../images/bg_card.svg);
@@ -1041,29 +1047,33 @@ body.body--lock {
 }
 
 .abbreviation-uhl--content {
-    padding: 2em 2em;
+    padding: 3em 3em;
     width: 50%;
 }
 
+.abbreviation-uhl--content>p {
+    margin-bottom: 0.7em;
+}
+
 .abbreviation-uhl--content:nth-child(3n) {
-    background: rgb(241, 215, 215);
+    background: rgb(255, 234, 234);
 }
 
 .abbreviation-uhl--content:nth-child(3n-2) {
-    background: rgb(210, 229, 238);
+    background: rgb(230, 247, 255);
 }
 
 .abbreviation-uhl--content:nth-child(3n-1) {
-    background: rgb(219, 255, 222);
-}
-
-.abbreviation-uhl--content ul {
-    margin-bottom: 2em;
+    background: rgb(228, 255, 231);
 }
 
 .abbreviation-uhl--content li {
     margin-bottom: 0.5em;
-    margin-left: 1em;
+    margin-left: 0em;
+}
+
+.abbreviation-uhl--content li:last-child {
+    margin-bottom: 0em;
 }
 
 @media(max-width: 767px) {
